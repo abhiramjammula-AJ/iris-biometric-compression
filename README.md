@@ -8,6 +8,8 @@ Lossless compression of binary iris biometric templates using **Huffman coding w
 
 *B.Tech Computer Science & Engineering capstone project · SRM University-AP · 2025*
 
+📄 **Project report:** [PDF](report/Capstone_Project_Report.pdf) · [Word](report/Capstone_Project_Report.docx)
+
 ---
 
 ## Contents
@@ -15,6 +17,7 @@ Lossless compression of binary iris biometric templates using **Huffman coding w
 - [Overview](#overview)
 - [How it works](#how-it-works)
 - [Results](#results)
+- [Project report](#project-report)
 - [Repository structure](#repository-structure)
 - [Getting started](#getting-started)
 - [Team](#team)
@@ -66,6 +69,12 @@ Measured on the 540 iris codes in [`data/Iris_binary.xlsx`](data/Iris_binary.xls
 
 Each value in an iris code is a 0 or 1, so Huffman coding stores it in 1 bit instead of 8, an 8:1 reduction. The `.npz` container then compresses the long runs of identical bits much further.
 
+## Project report
+
+The full report, _Secure and Efficient Iris Authentication Using Homomorphic Encryption with LRP-Optimized Huffman Compression_, covers the literature survey, design, implementation, results and future work. It is available as a [PDF](report/Capstone_Project_Report.pdf) and an editable [Word document](report/Capstone_Project_Report.docx).
+
+---
+
 ## Repository structure
 
 ```
@@ -77,6 +86,8 @@ iris-biometric-compression/
 │   └── xlsx_to_mat.py         Converts the iris spreadsheet to a .mat file
 ├── data/
 │   └── Iris_binary.xlsx       540 binary iris codes, 10,240 bits each
+├── report/
+│   └── Capstone_Project_Report (PDF and Word)
 └── requirements.txt
 ```
 
